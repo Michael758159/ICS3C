@@ -1,0 +1,2 @@
+name = "Michael"
+print("Hello %s, how are you" % name)
