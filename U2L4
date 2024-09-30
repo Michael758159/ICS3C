@@ -1,0 +1,8 @@
+total = 1
+n = int(input("enter a whole number more than 0: "))
+count = 0
+
+while (count < n):
+  count = count + 1
+  total = total * count
+  print ("factorial number", count, "is", total)
