@@ -1,26 +1,27 @@
 import random
+numgames = int(input("how many games would you like to play"))
+for i in range(numgames):
 
+    a = input("r = rock; p = paper, and s = scissors: ")
+    b = random.choice(['r', 'p', 's'])
+    if (b == 'r'):
+      print("player 'b' chose rock")
+    elif (b == 'p'):
+      print("player 'b' chose paper")
+    elif (b == 's'):
+      print("player 'b' chose scissors")
 
-a = input("r = rock; p = paper, and s = scissors: ")
-b = random.choice(['r', 'p', 's'])
-if (b == 'r'):
-  print("player 'b' chose rock")
-elif (b == 'p'):
-  print("player 'b' chose paper")
-elif (b == 's'):
-  print("player 'b' chose scissors")
-
-if (a == b):
-  print("Tie game!")
-elif (a == 'r') & (b == 'p'):
-  print("Player 'b' wins!")
-elif (b == 'r') & (a == 'p'):
-  print("player 'a' wins!")
-elif (a == 's') & (b =='p'):
-  print("player 'a' wins!")
-elif (b == 's') & (a == 'p'):
-  print("player 'b' wins!")
-elif (a == 'r') & (b == 's'):
-  print(" player 'a' wins!")
-elif (b == 'r') & (a == 's'):
-  print(" player 'b' wins!")
+    if (a == b):
+      print("Tie game!")
+    elif (a == 'r') & (b == 'p'):
+      print("Player 'b' wins!")
+    elif (b == 'r') & (a == 'p'):
+      print("player 'a' wins!")
+    elif (a == 's') & (b =='p'):
+      print("player 'a' wins!")
+    elif (b == 's') & (a == 'p'):
+      print("player 'b' wins!")
+    elif (a == 'r') & (b == 's'):
+      print(" player 'a' wins!")
+    elif (b == 'r') & (a == 's'):
+      print(" player 'b' wins!")
