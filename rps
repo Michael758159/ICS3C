@@ -1,6 +1,15 @@
 import random
+
+
 a = input("r = rock; p = paper, and s = scissors: ")
 b = random.choice(['r', 'p', 's'])
+if (b == 'r'):
+  print("player 'b' chose rock")
+elif (b == 'p'):
+  print("player 'b' chose paper")
+elif (b == 's'):
+  print("player 'b' chose scissors")
+
 if (a == b):
   print("Tie game!")
 elif (a == 'r') & (b == 'p'):
