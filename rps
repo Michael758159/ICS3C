@@ -1,13 +1,17 @@
 import random
-a = input("r = rock; p = paper, and s = scissors")
+a = input("r = rock; p = paper, and s = scissors: ")
 b = random.choice(['r', 'p', 's'])
 if (a == b):
   print("Tie game!")
 elif (a == 'r') & (b == 'p'):
   print("Player 'b' wins!")
-elif (b == 'r') & (a == 'p')
+elif (b == 'r') & (a == 'p'):
   print("player 'a' wins!")
 elif (a == 's') & (b =='p'):
   print("player 'a' wins!")
-elif (b == 's') & (a == 'p')
+elif (b == 's') & (a == 'p'):
   print("player 'b' wins!")
+elif (a == 'r') & (b == 's'):
+  print(" player 'a' wins!")
+elif (b == 'r') & (a == 's'):
+  print(" player 'b' wins!")
