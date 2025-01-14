@@ -1,27 +1,38 @@
 import random
-numgames = int(input("how many games would you like to play"))
-for i in range(numgames):
+# Author: Michael langenegger-stewart
+# Date Created: 2025 january 10
+# Rock Paper Scissors assignment
 
+
+
+numgames = int(input("How many games would you like to play: "))
+for i in range(numgames):
+    
     a = input("r = rock; p = paper, and s = scissors: ")
+    while (a != 'r' and a != 'p' and a != 's'):
+      print("Please enter a valid Input")
+      a = input("r = rock; p = paper, and s = scissors: ")
+
     b = random.choice(['r', 'p', 's'])
     if (b == 'r'):
-      print("player 'b' chose rock")
+     print("player 'b' chose rock")
     elif (b == 'p'):
-      print("player 'b' chose paper")
+     print("player 'b' chose paper")
     elif (b == 's'):
-      print("player 'b' chose scissors")
+     print("player 'b' chose scissors")
 
     if (a == b):
-      print("Tie game!")
+     print("Tie game!")
     elif (a == 'r') & (b == 'p'):
-      print("Player 'b' wins!")
+     print("Player 'b' wins!")
     elif (b == 'r') & (a == 'p'):
-      print("player 'a' wins!")
+     print("player 'a' wins!")
     elif (a == 's') & (b =='p'):
-      print("player 'a' wins!")
+     print("player 'a' wins!")
     elif (b == 's') & (a == 'p'):
-      print("player 'b' wins!")
+     print("player 'b' wins!")
     elif (a == 'r') & (b == 's'):
-      print(" player 'a' wins!")
+     print(" player 'a' wins!")
     elif (b == 'r') & (a == 's'):
-      print(" player 'b' wins!")
+     print(" player 'b' wins!")
+print("Thank you for playing!")
